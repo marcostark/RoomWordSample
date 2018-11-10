@@ -8,6 +8,12 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Hellor World!"
+        android:layout_marginBottom="6dp"
+        android:paddingLeft="8dp"
         android:background="@android:color/holo_orange_light"/>
+
 
 </android.support.constraint.ConstraintLayout>
