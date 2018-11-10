@@ -15,5 +15,6 @@ public class Word {
 
     public Word(@NonNull String word) {this.mWord = word;}
 
+    @NonNull
     public String getWord(){return this.mWord;}
 }

@@ -21,7 +21,8 @@ public class WordRepository {
     WordRepository(Application application) {
         WordRoomDatabase db = WordRoomDatabase.getDatabase(application);
         mWordDao = db.wordDao();
-        mAllWords = mWordDao.getAllWords();
+//        mAllWords = mWordDao.getAllWords();
+        mAllWords = mWordDao.getAlphabetizedWords();
     }
 
     LiveData<List<Word>> getAllWords(){
