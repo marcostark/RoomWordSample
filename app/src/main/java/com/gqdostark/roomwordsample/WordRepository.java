@@ -4,6 +4,10 @@ import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
 
+import com.gqdostark.roomwordsample.db.WordRoomDatabase;
+import com.gqdostark.roomwordsample.db.dao.WordDao;
+import com.gqdostark.roomwordsample.model.Word;
+
 import java.util.List;
 
 public class WordRepository {
@@ -18,14 +22,14 @@ public class WordRepository {
     private LiveData<List<Word>> mAllWords;
 
     /* Construtor que obtem identificado para o BD e inicializa as variáveis*/
-    WordRepository(Application application) {
+    public WordRepository(Application application) {
         WordRoomDatabase db = WordRoomDatabase.getDatabase(application);
         mWordDao = db.wordDao();
 //        mAllWords = mWordDao.getAllWords();
         mAllWords = mWordDao.getAlphabetizedWords();
     }
 
-    LiveData<List<Word>> getAllWords(){
+    public LiveData<List<Word>> getAllWords(){
         return mAllWords;
     }
 

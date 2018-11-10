@@ -1,10 +1,12 @@
-package com.gqdostark.roomwordsample;
+package com.gqdostark.roomwordsample.viewmodel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
-import android.util.Log;
+
+import com.gqdostark.roomwordsample.model.Word;
+import com.gqdostark.roomwordsample.WordRepository;
 
 import java.util.List;
 
@@ -28,7 +30,7 @@ public class WordViewModel extends AndroidViewModel {
         mAllWords = mRepository.getAllWords();
     }
 
-    LiveData<List<Word>> getAllWords() {
+    public LiveData<List<Word>> getAllWords() {
         return mAllWords;
     }
 

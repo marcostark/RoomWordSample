@@ -1,4 +1,4 @@
-package com.gqdostark.roomwordsample;
+package com.gqdostark.roomwordsample.ui;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
@@ -15,6 +15,10 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.gqdostark.roomwordsample.R;
+import com.gqdostark.roomwordsample.model.Word;
+import com.gqdostark.roomwordsample.viewmodel.WordViewModel;
 
 import java.util.List;
 

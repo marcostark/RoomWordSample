@@ -1,4 +1,4 @@
-package com.gqdostark.roomwordsample;
+package com.gqdostark.roomwordsample.model;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
