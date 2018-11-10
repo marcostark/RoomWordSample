@@ -32,4 +32,4 @@ dados relevantes e não param ou retomam a observação. O LiveData gerencia aut
 isso desde que está ciente das alterações relevantes no status do ciclo de vida durante a
 observação.
 
-### [Fonte:Google](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/#0)
+### [Fonte: Codelabs Google](https://codelabs.developers.google.com/codelabs/android-room-with-a-view/#0)
